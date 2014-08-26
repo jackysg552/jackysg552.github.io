@@ -1,0 +1,35 @@
+<html>
+<input id=o1 value="3"></input>
+<input id=o2 value="4"></input>
+<button onClick="muitiply()">*</button>
+<button onClick="add()">+</button>
+<button onClick="minus()">-</button>
+<button onClick="divide()">/</button>
+<br>
+<span id="result">0</span>
+<script>
+	var muitiply=function(){
+		var o1=document.getElementById("o1").value;
+		var o2=document.getElementById("o2").value;
+		document.getElementById("result").innerHTML=o1*o2;
+	}
+
+	var add=function(){
+		var o1=parseInt(document.getElementById("o1").value);
+		var o2=parseInt(document.getElementById("o2").value);
+		document.getElementById("result").innerHTML=o1+o2;
+	}
+	var minus=function(){
+		var o1=parseInt(document.getElementById("o1").value);
+		var o2=parseInt(document.getElementById("o2").value);
+		document.getElementById("result").innerHTML=o1-o2;
+	}
+	var divide=function(){
+		var o1=parseInt(document.getElementById("o1").value);
+		var o2=parseInt(document.getElementById("o2").value);
+		document.getElementById("result").innerHTML=o1/o2;
+	}
+
+
+	</script>
+</html>
